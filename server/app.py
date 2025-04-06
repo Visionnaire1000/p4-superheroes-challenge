@@ -76,3 +76,5 @@ def create_hero_power():
         }), 201
     except ValueError as e:
         return jsonify({"errors": [str(e)]}), 400
+if __name__ == "__main__":
+    app.run(debug=True)
